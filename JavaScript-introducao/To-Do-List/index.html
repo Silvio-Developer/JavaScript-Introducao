@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <h1>Lista de tarefas</h1>
+    <div id="lista">
+        <form id="task-form">
+            <input id="task-input" name="tarefa" type="text" placeholder="Digite aqui sua tarefa" />
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+    <div class="container-tarefas">
+    <div class="tarefas">
+        <ul class="contador">
+            <il class="item">Total de tarefas:<span id="tarefaAdicionada">0</span></il>
+            <il class="item">Tarefas realizadas:<span id="tarefaRealizada">0</span></il>
+            <il class="item">Tarefas pendentes:<span id="tarefaNaoRealizada">0</span></il>
+        </ul>
+    </div>
+    <p id="listaVazia">Sua lista de tarefas esta vazia!</p>
+    <div class="lista-itens">
+        
+        <ul class="item-tarefa">
+            <li id="tasks" onclick="verificarCheckBox()"></li>
+        </ul>
+    </div>
+    </div>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
